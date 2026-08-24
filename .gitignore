@@ -1,8 +1,24 @@
-venv/
-__pycache__/
-*.pyc
-.ipynb_checkpoints/
-data/raw_captures/
-*.pth
+# Large data / binaries
+*.db
+*.jpg
+*.jpeg
+*.png
 *.ply
 *.bin
+
+# Explicit exceptions: keep these specific result images
+!phase2_colmap/dino_colmap.png
+!phase2_colmap/dino_rcon_mesh.png
+!Gaussian-splating.png
+
+# Third-party repos
+gaussian-splatting/
+
+# Model outputs and checkpoints
+**/output/
+**/checkpoints/
+**/dense/
+**/dense_masks/
+
+# Stray files
+*.lnk
